@@ -1,0 +1,119 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: JetBrainsMono Nerd Font, monospace;
+    font-weight: bold;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(21, 18, 27, 0);
+    color: #cdd6f4;
+}
+
+#workspaces button {
+    padding: 5px;
+    color: #363840;
+    margin-right: 0px;
+    border-radius: 28px;
+    transition: background 0.4s cubic-bezier(.55,-0.68,.48,1.682), color 0.4s cubic-bezier(.55,-0.68,.48,1.682);
+}
+#workspaces button.active {
+    color: #a6adc8;
+}
+#workspaces button.focused {
+    color: #a6adc8;
+    background: #b175b1;
+    border-radius: 20px;
+}
+#workspaces button.urgent {
+    color: #11111b;
+    background: #b175b1;
+    border-radius: 20px;
+}
+#workspaces button:hover {
+    background: #cdd6f4;
+    color: #11111b; 
+    border-radius: 20px;
+}
+
+#workspaces {
+    background: rgba(175, 49, 106, 0.75);
+    border-radius:  20px 0 0 20px;
+    margin-left: 10px;
+    padding-right: 7px;
+    padding-left: 5px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 4px;
+    transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
+    border-top: solid 2px #fff;
+    border-left: solid 2px #fff;
+    border-bottom: solid 2px #fff;
+}
+
+#clock,
+#battery,
+#pulseaudio,
+#tray,
+#backlight,
+#language,
+#taskbar  {    
+    background: rgba(175, 49, 106, 0.75);
+    padding: 0px 12px;
+    margin: 3px 0px;
+    margin-top: 0px;
+    margin-bottom: 4px;
+    border-top: solid 2px #fff;
+    border-bottom: solid 2px #fff;
+    /* border-top: 1px solid #9393c6;  */
+}
+
+#clock {
+    color: #a6adc8;
+    border-radius: 0 20px 20px 0;
+    margin-left: 0px;
+    border-right: 0px;
+    border-right: solid 2px #fff;
+}
+
+#pulseaudio {
+    color: #a6adc8;
+    border-left: 0px;
+    border-right: 0px;
+    margin-right: 0px;
+}
+
+#battery {
+    color:#a6adc8;
+    padding-left: 6px;
+    padding-right: 0px;
+}
+
+#language {
+    color: #a6adc8;
+    border-left: 0px;
+    border-right: 0px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+#tray {
+    padding-left: 3px
+}
+
+#taskbar {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#taskbar button {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#backlight {
+    padding-left: 5px;
+    padding-right: 5px;
+}
